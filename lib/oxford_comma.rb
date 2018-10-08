@@ -7,5 +7,6 @@ def oxford_comma(array)
   end 
   if array.size > 2 
     x = array.size 
-  
+  array[x - 1] = "and #{array[x-1]}"
+  puts array.join(", ")
 end
